@@ -344,12 +344,12 @@ packages:
     source: hosted
     version: "2.0.4"
   url_launcher_web:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: url_launcher_web
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.9"
+    version: "2.0.12"
   url_launcher_windows:
     dependency: transitive
     description:

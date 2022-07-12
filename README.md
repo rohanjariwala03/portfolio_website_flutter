@@ -1,9 +1,5 @@
 # Responsive and Animated Portfolio Website & App - Flutter UI
 
-## [Live Preview](https://abuanwar072.github.io/profile/#/)
-
-## [Watch it on YouTube](https://youtu.be/G_ZIJseX6AU)
-
 **Packages we are using:**
 
 - flutter_svg: [link](https://pub.dev/packages/flutter_svg)
