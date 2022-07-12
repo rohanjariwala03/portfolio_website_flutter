@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'dart:html';
+import 'dart:html' as html;
 import 'dart:io' as dartIo;
 import 'package:flutter/material.dart';
 import 'package:flutter_profile/constants.dart';
@@ -40,32 +40,7 @@ class SideMenu extends StatelessWidget {
                     SizedBox(height: defaultPadding / 2),
                     TextButton(
                       onPressed: () {
-                        launch("data:application/octet-stream;base64,${base64Encode(
-                            dartIo.File('images/bg.jpeg').readAsBytesSync()
-                        )}");
-                        // print("done1");
-                        // dartIo.File file = dartIo.File('assets/images/bg.jpeg');
-                        // final rawData = file.readAsBytesSync();
-                        // final content = base64Encode(rawData);
-                        // final anchor = AnchorElement(
-                        //     href: "data:application/octet-stream;charset=utf-16le;base64,$content")
-                        //   ..setAttribute("download", "file.jpeg")
-                        //   ..click();
-                        // print("done");
-                        // // Encode our file in base64
-                        // final _base64 = base64Encode('I am a test file'.codeUnits);
-                        // // Create the link with the file
-                        // final anchor =
-                        // AnchorElement(href: 'data:application/octet-stream;base64,$_base64')
-                        //   ..target = 'blank';
-                        // // add the name
-                        // // if ('test.txt' != null) {
-                        //   anchor.download = 'test.txt';
-                        // // }
-                        // // trigger download
-                        // document.body?.append(anchor);
-                        // anchor.click();
-                        // anchor.remove();
+                        html.window.open("assets/resume/Resume_Rohan.pdf", "Resume");
                       },
                       child: FittedBox(
                         child: Row(
