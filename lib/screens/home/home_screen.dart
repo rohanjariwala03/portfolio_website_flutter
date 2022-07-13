@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_profile/screens/home/components/my_experience.dart';
 import 'package:flutter_profile/screens/main/main_screen.dart';
 
 import 'components/heighlights.dart';
@@ -15,7 +16,10 @@ class HomeScreen extends StatelessWidget {
       children: [
         HomeBanner(),
         //HighLightsInfo(),
+        SizedBox(height: 20,),
         MyProjects(),
+        SizedBox(height: 20,),
+        MyExperience(),
         SizedBox(height: 50,),
         //Recommendations(),
       ],
